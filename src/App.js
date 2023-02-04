@@ -5,6 +5,7 @@ const TRACKING_ID = "UA-254143119-2"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
+  ReactGA.pageview(window.location.pathname+window.location.search);
   return (
     <div className="App">
       <header className="App-header">
