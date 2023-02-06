@@ -13,7 +13,7 @@ const useAnalyticsEventTracker = (category="Blog category") => {
 
 function App() {
   ReactGA.pageview(window.location.pathname+window.location.search);
-  const gaEventTracker = useAnalyticsEventTracker('Learn more');
+  const gaEventTracker = useAnalyticsEventTracker('tes11');
   return (
     <div className="App">
       <header className="App-header">
@@ -24,7 +24,7 @@ function App() {
         <a
           className="App-link"
           href="https://charley-yh-wu.github.io/react-ga/"
-          onClick={()=>gaEventTracker('call')}
+          onClick={()=>gaEventTracker('test1')}
           target="_blank"
           rel="noopener noreferrer"
         >
