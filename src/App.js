@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-254143119-2"; // OUR_TRACKING_ID
+import ReactGA from 'react-ga4';
+const TRACKING_ID = "UG-NG1EHQV4BY"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 const useAnalyticsEventTracker = (category="Blog category") => {
