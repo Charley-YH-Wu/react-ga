@@ -16,6 +16,7 @@ function App() {
   ReactGA.send({ hitType: "pageview", page: window.location.pathname+window.location.search });
   const gaEventTracker = useAnalyticsEventTracker('tes11');
   return (
+
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -24,13 +25,23 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://charley-yh-wu.github.io/react-ga/"
-          onClick={()=>gaEventTracker('test1')}
+          href="https://github.com/Charley-YH-Wu/USCDoorDrink"
+          onClick={()=>gaEventTracker('USC Door Drink')}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn more
+          USC Door Drink
         </a>
+
+        <a
+          className="App-link"
+          href="https://github.com/Charley-YH-Wu/OPMusic"
+          onClick={()=>gaEventTracker('OPMusic')}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          OPMusic
+        </a>        
       </header>
     </div>
   );
