@@ -12,7 +12,8 @@ const useAnalyticsEventTracker = (category="Blog category") => {
 }
 
 function App() {
-  ReactGA.pageview(window.location.pathname+window.location.search);
+  //ReactGA.pageview(window.location.pathname+window.location.search);
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname+window.location.search });
   const gaEventTracker = useAnalyticsEventTracker('tes11');
   return (
     <div className="App">
